@@ -14,12 +14,19 @@ private:
   int n;
 
 public:
+  Merge();
   void getarray1();
   void getarray2();
   void merge();
   void getdetails();
   void showresarray();
 };
+Merge::Merge()
+{
+  for(int i = 0; i < size ; i ++)
+  {a[i]=0;
+  b[i]=0;}
+}
 
 void Merge::getarray1()
 {
@@ -42,7 +49,7 @@ void Merge::getarray2()
   cout<<"enter descending sorted array only!"<<endl;
   for(int i = 0; i < n; i++)
   {
-    cin>>a[i];
+    cin>>b[i];
   }
 }
 
